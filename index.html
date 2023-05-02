@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Veriheal</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/fontawesom/css/all.css" />
+    <link rel="stylesheet" href="assets/css/page.css" />
+  </head>
+  <body>
+    <div class="form-holder">
+      <div class="placer"></div>
+      <div class="survey">
+        <div class="step first">
+          <div class="question">
+            <div class="form-group">
+              <h6>
+                <small class="num"
+                  >1 <i class="fas fa-arrow-right"></i
+                ></small>
+                Have you experienced any of the following ailments in the
+                last year?
+              </h6>
+              <p>Choose an many as you like</p>
+              <div class="options">
+                <div class="check">
+                  <input type="checkbox" name="symps" id="1" />
+                  <label for="1">Anorexia</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="2" />
+                  <label for="2">Anxiety</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="3" />
+                  <label for="3">Arthritis</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="4" />
+                  <label for="4">Chronic Pain</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="5" />
+                  <label for="5">Glaucoma</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="6" />
+                  <label for="6">Insomnia</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="7" />
+                  <label for="7">Migraines</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="8" />
+                  <label for="8">Persistent Muscle Spasms</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="9" />
+                  <label for="9">Severe Nausea</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="10" />
+                  <label for="10">None</label>
+                </div>
+                <div class="check">
+                  <input type="checkbox" name="symps" id="11" />
+                  <label for="11">Other</label>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-form mr-auto">
+              Ok <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+        <div class="step second">
+          <div class="question">
+            <div class="form-group">
+              <h6>
+                <small class="num"
+                  >2 <i class="fas fa-arrow-right"></i
+                ></small>
+                Would you consider or do you currently use medical cannabis?
+              </h6>
+              <div class="options">
+                <div class="check">
+                  <input type="radio" name="symps" id="useYes" />
+                  <label for="useYes">Yes</label>
+                </div>
+                <div class="check">
+                  <input type="radio" name="symps" id="useNo" />
+                  <label for="useNo">No</label>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-form mr-auto">
+              Ok <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+        <div class="step third">
+          <div class="question">
+            <div class="form-group">
+              <h6>
+                <small class="num"
+                  >3 <i class="fas fa-arrow-right"></i
+                ></small>
+                Do you have a cannabis card?
+              </h6>
+              <div class="options">
+                <div class="check">
+                  <input type="radio" name="symps" id="cardYes" />
+                  <label for="cardYes">Yes</label>
+                </div>
+                <div class="check">
+                  <input type="radio" name="symps" id="cardNo" />
+                  <label for="cardNo">No</label>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-form mr-auto">
+              Ok <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+        <div class="step fourth">
+          <div class="question">
+            <div class="form-group">
+              <h6>
+                <small class="num"
+                  >4 <i class="fas fa-arrow-right"></i
+                ></small>
+                Is your card still valid?
+              </h6>
+              <div class="options">
+                <div class="check">
+                  <input type="radio" name="symps" id="validYes" />
+                  <label for="validYes">Yes</label>
+                </div>
+                <div class="check">
+                  <input type="radio" name="symps" id="validNo" />
+                  <label for="validNo">No</label>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-form mr-auto">
+              Ok <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+        <div class="step thanks">
+          <div class="text">
+            <h4>Awesome!</h4>
+            <p>
+              Visit the Veriheal blog to stay in the know with the latest
+              cannabis news, tips, tricks, recipes and findings right here
+              from <a href="">Veriheal</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".starter").on("click", function () {
+          $(".survey").removeClass("invisible");
+        });
+        $(".first .btn-form").on("click", function () {
+          $(".survey").css("transform", "translateY(-100%)");
+        });
+        $(".second .btn-form").on("click", function () {
+          $(".survey").css("transform", "translateY(-200%)");
+        });
+        $(".third .btn-form").on("click", function () {
+          $(".survey").css("transform", "translateY(-300%)");
+        });
+        $(".fourth .btn-form").on("click", function () {
+          $(".survey").css("transform", "translateY(-400%)");
+        });
+      });
+    </script>
+  </body>
+</html>
